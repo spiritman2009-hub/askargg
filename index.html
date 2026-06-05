@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح رفع ملف الإعدادات - ASKAR GG</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary-color: #ef4444;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --success-color: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid var(--card-bg);
+        }
+
+        header h1 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* قسم أزرار التحميل */
+        .download-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .download-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .btn-download {
+            background-color: var(--card-bg);
+            border: 2px solid var(--primary-color);
+            color: var(--text-color);
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-download:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
+        }
+
+        /* قسم الخطوات */
+        .steps-title {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-right: 4px solid var(--primary-color);
+            padding-right: 10px;
+        }
+
+        .step-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .step-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* تنسيق صور الشرح وتوسيطها */
+        .step-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* توضيح الإعدادات الداخلية */
+        .code-box {
+            background-color: #090d16;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            direction: ltr;
+            text-align: left;
+            margin-top: 10px;
+            border-left: 3px solid var(--primary-color);
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .success-box {
+            border-right: 4px solid var(--success-color);
+            background-color: rgba(16, 185, 129, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--success-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>سيرفر الألعاب - ASKAR GG</h1>
+            <p>دليل طريقة رفع ملف الإعدادات وتشغيل السيرفر</p>
+        </header>
+
+        <!-- قسم التحميلات الرئيسي المرتبط بمجلد APPS -->
+        <div class="download-section">
+            <a href="APPS/ASKAR-GG.apk" download class="btn-download">
+                📥 تحميل برنامج ASKAR-GG.apk
+            </a>
+            <a href="APPS/Askarnet4ps.json" download class="btn-download">
+                📄 تحميل ملف الإعدادات Askarnet4ps.json
+            </a>
+        </div>
+
+        <!-- قسم شرح الخطوات -->
+        <h2 class="steps-title">خطوات الإعداد والتشغيل</h2>
+
+        <!-- خطوة 1 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <div class="step-text">افتح التطبيق واضغط على أيقونة <span class="highlight-text">الاعدادات (3 نقاط)</span> في الأعلى لتنبثق قائمة الخيارات.</div>
+            </div>
+            <img src="IMG/1.png" alt="الخطوة 1" class="step-image">
+        </div>
+
+        <!-- خطوة 2 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <div class="step-text">انتقل بعد ذلك إلى واجهة الضبط واضغط على خيار <span class="highlight-text">Settings</span>.</div>
+            </div>
+            <img src="IMG/2.png" alt="الخطوة 2" class="step-image">
+        </div>
+
+        <!-- خطوة 3 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <div class="step-text">مرر لأسفل الصفحة واضغط اخر خيار المكتوب عليه <span class="highlight-text">Import Settings from JSON</span>.</div>
+            </div>
+            <img src="IMG/3.png" alt="الخطوة 3" class="step-image">
+        </div>
+
+        <!-- خطوة 4 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <div class="step-text">سيقوم النظام بفتح مستعرض الملفات الخاص بجهازك، توجه لمجلد التنزيلات وقم باختيار ملف الإعدادات الذي قمت بتحميله:</div>
+            </div>
+            <div class="code-box">Askarnet4ps.json</div>
+            <img src="IMG/4.png" alt="الخطوة 4" class="step-image">
+        </div>
+
+        <!-- خطوة 5 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">5</div>
+                <div class="step-text">ستظهر لك قائمة السيرفرات المكتشفة تلقائياً، قم بتأكيد إدخال البيانات عبر الضغط على <span class="highlight-text">IMPORT</span> في أسفل الشاشة.</div>
+            </div>
+            <img src="IMG/5.png" alt="الخطوة 5" class="step-image">
+        </div>
+
+        <!-- خطوة 6 -->
+        <div class="step-card">
+            <div class="step-header">
+                <div class="step-number">6</div>
+                <div class="step-text">الخطوة الأخيرة: ستفتح لك الواجهة الأساسية محملة بالسيرفر المختار بنجاح.</div>
+            </div>
+            <div class="success-box">
+                🎮 تم التفعيل! يمكنك الآن تشغيل السيرفر والبدء في اللعب مباشرة.
+            </div>
+            <img src="IMG/6.png" alt="الخطوة 6" class="step-image">
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "format": "chiaki-settings",
+  "version": 2,
+  "settings": {
+    "registered_hosts": [
+      {
+        "target": "PS4_10",
+        "ap_ssid": "3030303030303030",
+        "ap_bssid": "a8474a108d63",
+        "ap_key": "3939393939393939",
+        "ap_name": "PLAYSTATION(R)4",
+        "server_mac": "bc:60:a7:2a:d3:ce",
+        "server_nickname": "PS4-02",
+        "rp_regist_key": "MjVkZjRlZTAAAAAAAAAAAA==",
+        "rp_key_type": 2,
+        "rp_key": "Lu1bXR5kJzB120g2NoYwhg=="
+      },
+      {
+        "target": "PS4_10",
+        "ap_ssid": "3030303030303030",
+        "ap_bssid": "e89eb4833f23",
+        "ap_key": "3939393939393939",
+        "ap_name": "PLAYSTATION(R)4",
+        "server_mac": "f8:46:1c:c8:4f:8e",
+        "server_nickname": "PS4-01",
+        "rp_regist_key": "YTI5ZTY0ZGUAAAAAAAAAAA==",
+        "rp_key_type": 2,
+        "rp_key": "T6WVfG/N5BAAs92GyrFtHg=="
+      },
+      {
+        "target": "PS4_10",
+        "ap_ssid": "3030303030303030",
+        "ap_bssid": "2866e3dce801",
+        "ap_key": "3939393939393939",
+        "ap_name": "PLAYSTATION(R)4",
+        "server_mac": "78:c8:81:19:d5:9d",
+        "server_nickname": "PS4-03",
+        "rp_regist_key": "OTQwNDNiZTEAAAAAAAAAAA==",
+        "rp_key_type": 2,
+        "rp_key": "805cXVUHt6SaLou6vbBWZA=="
+      },
+      {
+        "target": "PS4_10",
+        "ap_ssid": "3030303030303030",
+        "ap_bssid": "b05216d77707",
+        "ap_key": "3939393939393939",
+        "ap_name": "PLAYSTATION(R)4",
+        "server_mac": "c8:63:f1:3c:a9:20",
+        "server_nickname": "PS4-04on",
+        "rp_regist_key": "NzQ2ZTdkNjEAAAAAAAAAAA==",
+        "rp_key_type": 2,
+        "rp_key": "m8wS+6Ug9yMb3VXlNcbFWA=="
+      }
+    ],
+    "manual_hosts": [
+      {
+        "host": "172.20.4.3",
+        "server_mac": "bc:60:a7:2a:d3:ce"
+      },
+      {
+        "host": "172.20.4.5",
+        "server_mac": "f8:46:1c:c8:4f:8e"
+      },
+      {
+        "host": "172.20.4.25",
+        "server_mac": "78:c8:81:19:d5:9d"
+      },
+      {
+        "host": "172.20.4.6",
+        "server_mac": "c8:63:f1:3c:a9:20"
+      }
+    ]
+  }
+}
